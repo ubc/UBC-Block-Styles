@@ -1,0 +1,60 @@
+/*
+    Boxed style.
+
+    Light grey border around entire accordion item.
+    Content separated from title by light grey border.
+*/
+.is-style-boxed-bw {
+    border: 1px solid #ccc;
+}
+
+.is-style-boxed-bw .c-accordion__content {
+    border-top: 1px solid #ccc;
+}
+
+.is-style-boxed-bw .c-accordion__title {
+    margin: 0;
+    padding: 0.25em;
+}
+
+.is-style-boxed-bw .c-accordion__title:after {
+    right: 0.25em;
+}
+
+.is-style-boxed-bw .c-accordion__content {
+    padding: 0 0.5em;
+}
+
+/*
+    Green Gradient Style
+
+    Title background is a green nearly-horizontal gradient from
+    #b7cb65 to #78BE20 with white text.
+    Content area is white background
+    Whole accordion item has light grey border.
+
+*/
+
+.is-style-gradient-green {
+    border: 1px solid #ccc;
+}
+
+.is-style-gradient-green .c-accordion__title {
+    background: linear-gradient(141deg, #b7cb65 0%, #78BE20 100%);
+    color: white;
+    margin: 0;
+    padding: 0.25em;
+}
+
+.is-style-gradient-green .c-accordion__content {
+    background: white;
+}
+
+.is-style-gradient-green .c-accordion__title:after {
+    right: 0.25em;
+    color: white;
+}
+
+.is-style-gradient-green .c-accordion__content {
+    padding: 0 0.5em;
+}
