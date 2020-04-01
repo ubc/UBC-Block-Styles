@@ -1,0 +1,13 @@
+/*
+    Green Gradient Tabs Style
+
+    Active Tab titles background is green #b7cb65.
+    Content area is white background
+    Whole tab item has light grey border.
+*/
+.is-style-gradient-green-tabs {
+    --ubc-tabs-block-tab-nav-top-border-color: #b7cb65;
+    --ubc-tabs-block-tab-nav-selected-text-color: black;
+    --ubc-tabs-block-tab-nav-text-color: black;
+    --ubc-tabs-block-content-border-color: #ccc;
+}

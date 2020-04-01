@@ -12,7 +12,7 @@
  * Plugin Name: UBC Block Styles
  * Plugin URI:  https://ctlt.ubc.ca/
  * Description: Provides additional styles for certain blocks.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Richard Tape
  * Author URI:  https://blogs.ubc.ca/
  * Text Domain: ubc-block-styles
@@ -21,3 +21,4 @@
  */
 
 require 'blocks/accordion-blocks/accordion-blocks.php';
+require 'blocks/ubc-tabs-block/ubc-tabs-block.php';
