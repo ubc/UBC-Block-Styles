@@ -10,8 +10,12 @@
     --ubc-tabs-block-tab-nav-selected-text-color: black;
     --ubc-tabs-block-tab-nav-text-color: black;
     --ubc-tabs-block-content-border-color: #ccc;
-    --ubc-tabs-block-accordion-trigger-background: #b7cb65;
-    --ubc-tabs-block-accordion-trigger-selected-background: #78BE20;
+    --ubc-tabs-block-accordion-trigger-background: linear-gradient(141deg, #b7cb65 0%, #78BE20 100%);
+    --ubc-tabs-block-accordion-trigger-selected-background: linear-gradient(141deg, #b7cb65 0%, #78BE20 100%);
+}
+
+.is-style-gradient-green-tabs .ubc-accordion-tabs__tabs-panel .content {
+    border-width: 1px;
 }
 
 /*

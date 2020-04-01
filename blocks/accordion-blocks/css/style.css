@@ -43,7 +43,9 @@
     background: linear-gradient(141deg, #b7cb65 0%, #78BE20 100%);
     color: white;
     margin: 0;
-    padding: 0.25em;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .is-style-gradient-green .c-accordion__content {
@@ -51,8 +53,9 @@
 }
 
 .is-style-gradient-green .c-accordion__title:after {
-    right: 0.25em;
+    right: 1.2rem;
     color: white;
+    font-size: 38px;
 }
 
 .is-style-gradient-green .c-accordion__content {
