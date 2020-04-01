@@ -6,10 +6,12 @@
     Whole tab item has light grey border.
 */
 .is-style-gradient-green-tabs {
-    --ubc-tabs-block-tab-nav-top-border-color: #b7cb65;
+    --ubc-tabs-block-tab-nav-top-border-background: #b7cb65;
     --ubc-tabs-block-tab-nav-selected-text-color: black;
     --ubc-tabs-block-tab-nav-text-color: black;
     --ubc-tabs-block-content-border-color: #ccc;
+    --ubc-tabs-block-accordion-trigger-background: #b7cb65;
+    --ubc-tabs-block-accordion-trigger-selected-background: #78BE20;
 }
 
 /*
@@ -20,15 +22,15 @@
     Content area is white background with light blue border
 */
 .is-style-clf {
-    --ubc-tabs-block-tab-nav-top-border-color: transparent;
-    --ubc-tabs-block-tab-nav-background-color: #2F5D7C;
+    --ubc-tabs-block-tab-nav-top-border-background: transparent;
+    --ubc-tabs-block-tab-nav-background: #2F5D7C;
     --ubc-tabs-block-tab-nav-text-color: #fff;
-    --ubc-tabs-block-tab-nav-selected-background-color: #002145;
+    --ubc-tabs-block-tab-nav-selected-background: #002145;
     --ubc-tabs-block-tab-nav-selected-text-color: #fff;
     --ubc-tabs-block-tab-nav-border-color: transparent;
     --ubc-tabs-block-content-border-color: #2F5D7C;
-    --ubc-tabs-block-accordion-trigger-background-color: #2F5D7C;
-    --ubc-tabs-block-accordion-trigger-selected-background-color: #002145;
+    --ubc-tabs-block-accordion-trigger-background: #2F5D7C;
+    --ubc-tabs-block-accordion-trigger-selected-background: #002145;
 }
 
 /* Original css applies .5 opacity on inactive tabs. */
