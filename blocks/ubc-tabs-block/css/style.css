@@ -21,6 +21,7 @@
     --ubc-tabs-block-tab-nav-border-color: transparent;
     --ubc-tabs-block-content-border-color: #2F5D7C;
     --ubc-tabs-block-accordion-trigger-background-color: #2F5D7C;
+    --ubc-tabs-block-accordion-trigger-selected-background-color: #002145;
 }
 
 /* Original css applies .5 opacity on inactive tabs. */
