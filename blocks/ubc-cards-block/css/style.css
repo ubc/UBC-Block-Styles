@@ -1,0 +1,110 @@
+:root {
+    --sauder-light-green: #b7cb65;
+    --sauder-dark-green: #78BE20;
+
+    --sauder-light-blue: #418f8b;
+    --sauder-dark-blue: #041E42;
+
+    --button-bg-color-primary: #222;
+    --button-text-color-primary: #fff;
+
+    --aspect-ratio: 1/1;
+}
+
+/*
+* Sauder cards are square. Using https://css-tricks.com/aspect-ratio-boxes/#using-custom-properties
+* we create the aspect ratio required regardless of how many columns they are in.
+*/
+.is-style-sauder-green > :first-child,
+.is-style-sauder-blue > :first-child {
+    width: 100%;
+}
+
+@supports (--custom:property) {
+
+    .is-style-sauder-green,
+    .is-style-sauder-blue {
+        position: relative;
+    }
+
+    .is-style-sauder-green::before,
+    .is-style-sauder-blue::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio))) !important;
+    }
+
+    .is-style-sauder-green > :first-child,
+    .is-style-sauder-blue > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        outline: 2px solid transparent;
+        transition: 0.15s ease-in all;
+    }
+}
+
+.is-style-sauder-green .uagb-cta__content-wrap,
+.is-style-sauder-blue .uagb-cta__content-wrap {
+    padding: 1em;
+}
+
+/*
+* Hover styles. Add a dark grey outline.
+*/
+.is-style-sauder-green:hover > :first-child,
+.is-style-sauder-blue:hover > :first-child {
+    outline: 2px solid var(--button-bg-color-primary, #222);
+}
+
+/*
+* Both styles of Sauder square cards have a horizontal line at the bottom.
+*/
+.is-style-sauder-blue::after,
+.is-style-sauder-green::after {
+    display: inline-block;
+    content: "";
+    border-top: .15rem solid white;
+    width: 30%;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}
+
+/*
+* Sauder Green is a card with a minimum aspect ratio of 1:1
+* where the card is only not square if the content is longer
+* than it is wide.
+*
+* With a green gradient background, dark text.
+*/
+.is-style-sauder-green {
+    background: linear-gradient(141deg, var(--sauder-light-green, #b7cb65) 0%, var(--sauder-dark-green, #78BE20) 100%);
+}
+
+
+/*
+* Sauder Blue is a card with a minimum aspect ratio of 1:1
+* where the card is only not square if the content is longer
+* than it is wide.
+*
+* With a dark blue gradient background, light text.
+*/
+
+.is-style-sauder-blue {
+    background: linear-gradient(141deg, var(--sauder-light-blue, #418f8b) 0%, var(--sauder-dark-blue, #041E42) 100%);
+}
+
+    .is-style-sauder-blue,
+    .is-style-sauder-blue h3 {
+        color: white;
+    }
+
+/*
+* Style the buttons in case folks use that style
+*/
+.is-style-sauder-green .uagb-cta__block-link,
+.is-style-sauder-blue .uagb-cta__block-link {
+    background: var(--button-bg-color-primary, #222) !important; /* !important required due to inline style using the generated ID */
+    color: var(--button-text-color-primary, #fff) !important; /* !important required due to inline style using the generated ID */
+}

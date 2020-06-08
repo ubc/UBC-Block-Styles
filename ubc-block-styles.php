@@ -22,3 +22,4 @@
 
 require 'blocks/accordion-blocks/accordion-blocks.php';
 require 'blocks/ubc-tabs-block/ubc-tabs-block.php';
+require 'blocks/ubc-cards-block/ubc-cards-block.php';
