@@ -36,3 +36,83 @@
     background: #e8e8e8;
     color: #2D3B45;
 }
+
+:root {
+    --pathways-button-hover-bg-color: #013064;
+}
+
+/*
+ * UBC Primary BG Button
+ * A rectangular button with the UBC Primary Blue background,
+ * capitalized text, padding. Hover state shifts bg colour to
+ * be a lighter blue. Active/Focus state is handled by CLF.
+ */
+.wp-block-button.is-style-ubc-primary-bg {
+    min-width: 220px;
+    transition: color .2s ease, background-color .2s ease;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 48px;
+    text-decoration: none;
+    position: relative;
+    background-color: var(--color-ubc-primary);
+    border-radius: 0;
+    padding: 0;
+    border: solid 2px;
+}
+
+.wp-block-button.is-style-ubc-primary-bg .wp-block-button__link {
+    font-size: 0.95em;
+    font-weight: 600;
+    background: transparent;
+    color: var(--color-ubc-white);
+    border-radius: 0;
+    height: 50px;
+    padding: 0;
+    width: 100%;
+}
+
+.wp-block-button.is-style-ubc-primary-bg:hover {
+    background: var(--pathways-button-hover-bg-color);
+    border-color: var(--pathways-button-hover-bg-color);
+}
+
+/**
+ * UBC White BG Button
+ * An outline style button, similar to the blue bg button
+ * above, but with a white bg.
+ */
+.wp-block-button.is-style-ubc-white-bg {
+    padding: 0;
+    min-width: 220px;
+    transition: color .2s ease, background-color .2s ease;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 48px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    background-color: var(--color-ubc-white);
+    color: var(--color-ubc-primary);
+    border: solid 2px;
+    background: 0 0 !important;
+}
+
+.wp-block-button.is-style-ubc-white-bg .wp-block-button__link {
+    height: 50px;
+    padding: 0;
+    font-size: 0.95em;
+    border-radius: 0;
+    background: transparent;
+    color: var(--color-ubc-primary);
+    width: 100%;
+}
+
+.wp-block-button.is-style-ubc-white-bg:hover {
+    color: var(--pathways-button-hover-bg-color);
+    border-color: var(--pathways-button-hover-bg-color);
+}

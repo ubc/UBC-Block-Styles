@@ -1,0 +1,122 @@
+:root {
+
+    --color-ubc-primary: #002145;
+    --color-ubc-white: #ffffff;
+    --color-ubc-secondary: #2F5D7C;
+    --color-ubc-tertiary: #5E869F;
+    --color-ubc-quaternary: #98B2C3;
+    --color-ubc-quinary: #C3D0DB;
+
+    --color-fom-primary: #032045;
+
+    --narrow-line-under-width: 36px;
+    --narrow-line-under-color: var(--color-ubc-tertiary);
+
+    --medium-line-under-width: 180px;
+    --medium-line-under-color: var(--color-fom-primary);
+
+    --wide-line-under-width: 600px;
+    --wide-line-under-color: var(--color-ubc-tertiary);
+}
+
+/*
+ * is-style-pathways-narrow-line-under
+ * -----------------------------------
+ *
+ * A heading which contains a 36px wide horizontal line in light blue under the heading.
+ * Several different versions of this - one centre-aligned, one left-aligned and one
+ * for right-aligned.
+ * Works for all levels of headings.
+ */
+
+.is-style-pathways-narrow-line-under {
+    position: relative;
+    line-height: 27px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.is-style-pathways-narrow-line-under::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: var(--narrow-line-under-width, 36px);
+    background: var(--narrow-line-under-color, #5E869F);
+    bottom: -4px;
+    height: 1px;
+}
+
+.is-style-pathways-narrow-line-under.has-text-align-center::after,
+.is-style-pathways-medium-line-under.has-text-align-center::after,
+.is-style-pathways-wide-line-under.has-text-align-center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.is-style-pathways-narrow-line-under.has-text-align-right::after,
+.is-style-pathways-medium-line-under.has-text-align-right::after,
+.is-style-pathways-wide-line-under.has-text-align-right::after {
+    right: 0;
+}
+
+/*
+ * Text styling is all caps, 14px, 400 weight
+ * If the title contains a link, be specific about that styling too.
+ */
+html body .is-style-pathways-narrow-line-under,
+html body .is-style-pathways-narrow-line-under a {
+    color: var(--color-ubc-primary, #002145);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+/*
+ * is-style-pathways-medium-line-under
+ * -----------------------------------
+ *
+ * A heading which contains a 180px wide horizontal line under the heading
+ * Several different versions of this - once centre-aligned, one left-aligned
+ * and one for right-aligned.
+ * Works for all levels of headings.
+ */
+
+.is-style-pathways-medium-line-under {
+    position: relative;
+}
+
+.is-style-pathways-medium-line-under::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: var(--medium-line-under-width, 180px);
+    background: var(--medium-line-under-color, #032045);
+    bottom: -20px;
+    height: 1px;
+}
+
+/*
+ * is-style-pathways-wide-line-under
+ * -----------------------------------
+ *
+ * A heading which contains a 600px wide horizontal line under the heading
+ * Several different versions of this - once centre-aligned, one left-aligned
+ * and one for right-aligned.
+ * Works for all levels of headings.
+ */
+
+.is-style-pathways-wide-line-under {
+    position: relative;
+}
+
+.is-style-pathways-wide-line-under::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: var(--wide-line-under-width, 600px);
+    background: var(--wide-line-under-color, #5E869F);
+    bottom: -0.5em;
+    height: 1px;
+}

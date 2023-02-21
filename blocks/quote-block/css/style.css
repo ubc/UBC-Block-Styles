@@ -1,0 +1,128 @@
+/**
+ * Large With Icon (mostly for Pathways)
+ * Large (1.7em) text in primary blue quote with
+ * a lighter blue citation. Has an icon top left
+ * and bottom right.
+ */
+body .wp-block-pullquote.is-style-large-with-icon blockquote,
+body blockquote.wp-block-quote.is-style-large-with-icon {
+    margin-block: min(40px, 5%);
+    margin-left: min(80px, 4vw);
+    border-left: solid 3px var(--color-ubc-tertiary);
+    position: relative;
+    overflow: inherit;
+    overflow-wrap: break-word;
+    margin: 10% 0;
+    padding: 0 0 0 30px;
+    opacity: 1;
+    transition: transform 1s cubic-bezier(.08, .65, .42, .97), opacity 1s linear, -webkit-transform 1s cubic-bezier(.08, .65, .42, .97) !important;
+    transform: translate3d(0, 0, 0);
+    quotes: none;
+}
+
+/**
+ * Add the icon top left
+ */
+body .wp-block-pullquote.is-style-large-with-icon blockquote::before,
+body blockquote.wp-block-quote.is-style-large-with-icon::before {
+    width: 70px;
+    height: 70px;
+    left: -110px;
+    top: 15px;
+    opacity: 1;
+    transform: scale(1);
+    animation: wiggle 2.4s infinite;
+}
+
+/**
+ * Add the icon bottom right
+ */
+body .wp-block-pullquote.is-style-large-with-icon blockquote::after,
+body blockquote.wp-block-quote.is-style-large-with-icon::after {
+    width: 54px;
+    height: 54px;
+    bottom: 50px;
+    right: -110px;
+    opacity: 1;
+    transform: scale(1);
+    animation: wiggle 2.4s 1.2s infinite;
+}
+
+body .wp-block-pullquote.is-style-large-with-icon blockquote::before,
+body .wp-block-pullquote.is-style-large-with-icon blockquote::after,
+body blockquote.wp-block-quote.is-style-large-with-icon::before,
+body blockquote.wp-block-quote.is-style-large-with-icon::after {
+    content: "";
+    position: absolute;
+    background: url('https://pathwaysmagazine.med.ubc.ca/files/2022/03/molecule-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+body .wp-block-pullquote.is-style-large-with-icon p,
+body .wp-block-quote.is-style-large-with-icon p {
+    font-size: 1.7em;
+    line-height: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    color: var(--color-ubc-primary);
+}
+
+body .wp-block-pullquote.is-style-large-with-icon cite,
+body .wp-block-quote.is-style-large-with-icon cite {
+    margin-top: 1em;
+    display: block;
+    color: var(--color-ubc-tertiary);
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+}
+
+/**
+ * A pullout quote style which has a title, a horizontal line
+ * above and below, and an icon top left.
+ */
+
+ :root {
+    --pullout-with-icon-bg-color: #fafafa;
+ }
+
+body .wp-block-quote.is-style-pullout-with-icon {
+    border: none;
+    padding: 1em 12px;
+    border-radius: 10px;
+    margin: 0;
+    background: var(--pullout-with-icon-bg-color);
+}
+
+body .wp-block-quote.is-style-pullout-with-icon hr {
+    margin: 1em auto;
+    border-bottom-width: 0;
+    border-top-width: 1px;
+}
+
+
+/**
+ * The "wiggle" animation which is sort of zoom in and out.
+ */
+@keyframes wiggle {
+    0% {
+        transform: scale(1.0) translateY(0);
+        -webkit-transform: scale(1.0) translateY(0);
+    }
+
+    50% {
+        transform: scale(.9) translateY(4px);
+        -webkit-transform: scale(.9) translateY(4px);
+    }
+
+    100% {
+        transform: scale(1.0) translateY(0);
+        -webkit-transform: scale(1.0) translateY(0);
+    }
+}
