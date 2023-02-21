@@ -25,7 +25,8 @@ body blockquote.wp-block-quote.is-style-large-with-icon {
  * Add the icon top left
  */
 body .wp-block-pullquote.is-style-large-with-icon blockquote::before,
-body blockquote.wp-block-quote.is-style-large-with-icon::before {
+body blockquote.wp-block-quote.is-style-large-with-icon::before,
+body .wp-block-quote.is-style-pullout-with-icon::before {
     width: 70px;
     height: 70px;
     left: -110px;
@@ -52,7 +53,8 @@ body blockquote.wp-block-quote.is-style-large-with-icon::after {
 body .wp-block-pullquote.is-style-large-with-icon blockquote::before,
 body .wp-block-pullquote.is-style-large-with-icon blockquote::after,
 body blockquote.wp-block-quote.is-style-large-with-icon::before,
-body blockquote.wp-block-quote.is-style-large-with-icon::after {
+body blockquote.wp-block-quote.is-style-large-with-icon::after,
+body .wp-block-quote.is-style-pullout-with-icon::before {
     content: "";
     position: absolute;
     background: url('https://pathwaysmagazine.med.ubc.ca/files/2022/03/molecule-1.png');
@@ -102,9 +104,30 @@ body .wp-block-quote.is-style-pullout-with-icon {
 }
 
 body .wp-block-quote.is-style-pullout-with-icon hr {
-    margin: 1em auto;
+    margin: 0.1em auto;
     border-bottom-width: 0;
     border-top-width: 1px;
+    color: var(--color-ubc-quinary, #C3D0DB);
+    background-color: var(--color-ubc-quinary, #C3D0DB);
+}
+
+body .wp-block-quote.is-style-pullout-with-icon h3,
+body .wp-block-quote.is-style-pullout-with-icon p {
+    color: var(--color-ubc-primary, #002145);
+    font-size: 13.5px;
+    font-weight: 400;
+}
+
+body .wp-block-quote.is-style-pullout-with-icon p {
+    margin-bottom: 1.4em;
+}
+
+/**
+ * Adjust position of wiggle for this quote style
+ */
+body .wp-block-quote.is-style-pullout-with-icon::before {
+    left: -20px;
+    top: -55px;
 }
 
 
