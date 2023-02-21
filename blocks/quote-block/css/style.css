@@ -7,12 +7,13 @@
 body .wp-block-pullquote.is-style-large-with-icon blockquote,
 body blockquote.wp-block-quote.is-style-large-with-icon {
     margin-block: min(40px, 5%);
+    margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: min(80px, 4vw);
     border-left: solid 3px var(--color-ubc-tertiary);
     position: relative;
     overflow: inherit;
     overflow-wrap: break-word;
-    margin: 10% 0;
     padding: 0 0 0 30px;
     opacity: 1;
     transition: transform 1s cubic-bezier(.08, .65, .42, .97), opacity 1s linear, -webkit-transform 1s cubic-bezier(.08, .65, .42, .97) !important;
