@@ -1,8 +1,8 @@
 /**
- * A 1px thick, centred, 80%-wide, tertiary blue/grey coloured dividing line.
+ * A 1px thick, centred, 71%-wide, tertiary blue/grey coloured dividing line.
  */
 html body div hr.wp-block-separator.is-style-pathways-wide-tertiary {
-    width: 80%;
+    width: 71%;
     max-width: 930px;
     height: 1px;
     margin: 0 auto;
