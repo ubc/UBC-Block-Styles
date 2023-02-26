@@ -27,3 +27,14 @@ html body.wp-admin .is-style-pathways-pseudo-featured img,
     margin: auto;
     box-sizing: border-box;
 }
+
+html body .is-style-pathways-pseudo-featured figcaption {
+    font-size: 14px;
+    margin-top: 5px !important;
+    line-height: 1.7em;
+    text-align: left;
+    margin-bottom: 1.6em;
+    color: var(--color-ubc-primary);
+    max-width: 940px;
+    margin: 5px auto 1em;
+}
