@@ -13,6 +13,7 @@
 /* Allow the image to have full width in the editor. */
 html body.wp-admin .wp-block-image.is-style-pathways-pseudo-featured .components-resizable-box__container {
     display: block;
+    margin: 0 auto;
 }
 
 /* Enforce the height and width, and use cover so the image isn't awkwardly resized. */
