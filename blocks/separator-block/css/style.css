@@ -16,7 +16,7 @@ html body div hr.wp-block-separator.is-style-pathways-wide-tertiary {
 /**
  * A 1px thick, centred, 100%-wide, tertiary blue/grey coloured dividing line.
  */
-html body div hr.wp-block-separator.is-style-pathways-wide-tertiary {
+html body div hr.wp-block-separator.is-style-pathways-full-tertiary {
     width: 100%;
     height: 1px;
     margin: 0 auto;
