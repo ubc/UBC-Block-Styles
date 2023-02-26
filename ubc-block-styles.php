@@ -28,3 +28,4 @@ require 'blocks/button-block/button-block.php';
 require 'blocks/heading-block/heading-block.php';
 require 'blocks/separator-block/separator-block.php';
 require 'blocks/quote-block/quote-block.php';
+require 'blocks/image-block/image-block.php';
