@@ -116,3 +116,36 @@
     color: var(--pathways-button-hover-bg-color);
     border-color: var(--pathways-button-hover-bg-color);
 }
+
+/**
+ * UBC Secondary Blue Button
+ * A rectangular white background button with the secondary blue border.
+ */
+.wp-block-button.is-style-ubc-secondary-blue {
+	color: #0055B7;
+	background: white;
+	background-color: white;
+	border: 1px solid #0055B7;
+	transition: color .2s ease,
+		background-color .2s ease;
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+.wp-block-button.is-style-ubc-secondary-blue:hover {
+	color: #fff;
+}
+
+.wp-block-button.is-style-ubc-secondary-blue .wp-block-button__link {
+	border: 1px solid #0055B7;
+	font-size: 1.1em;
+	border-radius: 0px;
+	background: white;
+	color: #0055B7;
+}
+
+.wp-block-button.is-style-ubc-secondary-blue .wp-block-button__link:hover {
+	background-color: #0055B7;
+	color: white;
+}
