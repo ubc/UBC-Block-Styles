@@ -5,24 +5,24 @@
     Content separated from title by light grey border.
 */
 .is-style-boxed-bw {
-    border: 1px solid #ccc;
+	border: 1px solid #ccc;
 }
 
 .is-style-boxed-bw .c-accordion__content {
-    border-top: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 
 .is-style-boxed-bw .c-accordion__title {
-    margin: 0;
-    padding: 0.25em;
+	margin: 0;
+	padding: 0.25em;
 }
 
 .is-style-boxed-bw .c-accordion__title:after {
-    right: 0.25em;
+	right: 0.25em;
 }
 
 .is-style-boxed-bw .c-accordion__content {
-    padding: 0 0.5em;
+	padding: 0 0.5em;
 }
 
 /*
@@ -36,28 +36,87 @@
 */
 
 .is-style-gradient-green {
-    border: 1px solid #ccc;
+	border: 1px solid #ccc;
 }
 
 .is-style-gradient-green .c-accordion__title {
-    background: linear-gradient(141deg, #b7cb65 0%, #78BE20 100%);
-    color: white;
-    margin: 0;
-    padding: 1rem 1.2rem;
-    font-size: 1rem;
-    font-weight: normal;
+	background: linear-gradient(141deg, #b7cb65 0%, #78BE20 100%);
+	color: white;
+	margin: 0;
+	padding: 1rem 1.2rem;
+	font-size: 1rem;
+	font-weight: normal;
 }
 
 .is-style-gradient-green .c-accordion__content {
-    background: white;
+	background: white;
 }
 
 .is-style-gradient-green .c-accordion__title:after {
-    right: 1.2rem;
-    color: white;
-    font-size: 38px;
+	right: 1.2rem;
+	color: white;
+	font-size: 38px;
 }
 
 .is-style-gradient-green .c-accordion__content {
-    padding: 0 0.5em;
+	padding: 0 0.5em;
+}
+
+/*
+ * Boxed Secondary Blue Style
+ *
+ * Grey border, with secondary blue accordion titles. Titles are secondary blue
+ * bg on hover with white text. Chevron down icon when closed, chevron up icon
+ * when open.
+ */
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary .c-accordion__title {
+	font-size: 1rem;
+	font-weight: normal;
+	color: #0055B7;
+	margin-bottom: -1rem;
+	border: 1px solid #e5e5e5;
+	padding: 0.5rem 1rem 0.5rem;
+}
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary .c-accordion__title:hover {
+	background: #0055B7;
+	color: white;
+}
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary .c-accordion__title::after {
+	position: absolute;
+	content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%230055B7" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+	display: block;
+	right: 12px;
+	top: 27px;
+	color: #0055B7;
+}
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary .c-accordion__title:hover::after {
+	content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+}
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary.is-open .c-accordion__title::after {
+	content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%230055B7" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>');
+}
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary.is-open .c-accordion__title:hover::after {
+	content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>');
+}
+
+/* Slightly different icon position in the editor. */
+.wp-admin .wp-block-pb-accordion-item.is-style-boxed-secondary .c-accordion__title::after {
+	top: 21px;
+}
+
+.wp-block-pb-accordion-item.is-style-boxed-secondary .c-accordion__content {
+	margin-top: 1rem;
+	margin-bottom: -1rem;
+	border: 1px solid #e5e5e5;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(229, 229, 229);
+	border-top: none;
+	padding: 1.5rem 1.5rem 0;
 }
