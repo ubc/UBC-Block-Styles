@@ -49,39 +49,39 @@
  * Active Tab titles background is ubc secondary blue. Borders around tabs themselves
  * are secondary blue. The tab content doesn't have a border.
  */
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li a[role="tab"].is-selected,
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li button[role="tab"].is-selected {
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li a[role="tab"].is-selected,
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li button[role="tab"].is-selected {
 	background: #0055B7;
 	border: 1px solid #0055B7;
 	color: #fff;
 }
 
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li a[role="tab"]::before,
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li button[role="tab"]::before {
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li a[role="tab"]::before,
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li button[role="tab"]::before {
 	--ubc-tabs-block-tab-nav-top-border-height: 0px;
 }
 
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li a[role="tab"],
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li button[role="tab"] {
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li a[role="tab"],
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li button[role="tab"] {
 	color: #0055B7;
 	border-top: 1px solid #0055B7;
 	border-left: 1px solid #0055B7;
 	opacity: 1;
 }
 
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li:last-of-type a[role="tab"],
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li:last-of-type button[role="tab"] {
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li:last-of-type a[role="tab"],
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tab-list li:last-of-type button[role="tab"] {
 	border: 1px solid #0055B7;
 }
 
-.wp-block-ubc-tabs.is-style-secondary-blue-bg.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tabs-trigger:hover,
-.wp-block-ubc-tabs.is-style-secondary-blue-bg.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tabs-trigger:focus,
-.wp-block-ubc-tabs.is-style-secondary-blue-bg.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tabs-trigger:active {
+.is-style-secondary-blue-bg.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tabs-trigger:hover,
+.is-style-secondary-blue-bg.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tabs-trigger:focus,
+.is-style-secondary-blue-bg.ubc-accordion-tabs.tabs-allowed .ubc-accordion-tabs__tabs-trigger:active {
 	background-color: #0055B7;
 	color: #fff;
 }
 
-.wp-block-ubc-tabs.is-style-secondary-blue-bg .ubc-accordion-tabs__tabs-panel .content {
+.is-style-secondary-blue-bg .ubc-accordion-tabs__tabs-panel .content {
 	margin-top: 1px;
 	border-top: 1px solid #0055B7;
 	border-right: 0;
