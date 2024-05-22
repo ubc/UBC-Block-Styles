@@ -1,0 +1,24 @@
+:root {
+
+    --color-ctlt-callout-background: #f4fafc;
+    --color-ctlt-callout-border: #dddddd;
+    --color-ctlt-callout-border-alt: #00a7e1;
+}
+
+
+/*
+ * is-style-ctlt-callout
+ * -----------------------------------
+ *
+ * Box with light blue background with ubc secondary blue left border 3px solid
+ * Grey border 1px solid and 30px padding
+ */
+
+.is-style-ctlt-callout {
+    background-color:var(--color-ctlt-callout-background);
+    border:1px solid var(--color-ctlt-callout-border); 
+    border-left:3px solid var(--color-ctlt-callout-border-alt);
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
