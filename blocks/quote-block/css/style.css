@@ -56,7 +56,7 @@ body blockquote.wp-block-quote.is-style-large-with-icon::after,
 body .wp-block-quote.is-style-pullout-with-icon::before {
     content: "";
     position: relative;
-    background: var(--image-fom-molecule, url('https://ctlt-cms-main-2022.sites.olt.ubc.ca/files/2026/06/quote.png'));
+    background: url('https://ctlt-cms-main-2022.sites.olt.ubc.ca/files/2026/06/quote.png');
     background-size: contain;
     background-repeat: no-repeat;
     transition: opacity 1s ease, transform 1s ease;
