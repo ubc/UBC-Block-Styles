@@ -28,9 +28,7 @@ add_action( 'enqueue_block_editor_assets', 'enqueue_block_editor_assets__quote_b
 function enqueue_block_assets__quote_block_style() {
 	wp_enqueue_style(
 		'ubc-quote-block-css',
-		plugins_url( 'css/style.css', __FILE__ ),
-		array(),
-		'1.0.1'
+		plugins_url( 'css/style.css', __FILE__ )
 	);
 }//end enqueue_block_assets__quote_block_style()
 
