@@ -120,3 +120,56 @@
 	border-top: none;
 	padding: 1.5rem 1.5rem 0;
 }
+
+/*
+ * UDL Hub Purple Style
+ *
+ * UDL Hub Purple accordion titles. Greyish blue thin border at the bottom of each accordion. No hover. 
+ * Plus symbol when closed, Minus symbol when open.
+ */
+
+ .wp-block-pb-accordion-item.is-style-udlhub-purple {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border-bottom: 1px solid #4B5977;
+ }
+
+ .wp-block-pb-accordion-item.is-style-udlhub-purple .c-accordion__title {
+	 color: #5D487C;
+     font-size: 2rem;
+	 font-weight: 600;
+     line-height: 170%;
+	 padding-right: 5rem;
+}
+
+
+.wp-block-pb-accordion-item.is-style-udlhub-purple .c-accordion__title::after {
+	 content: "+";
+	 color: #5D487C;
+     font-weight: bold;
+	 font-size: 2rem;
+}
+
+.wp-block-pb-accordion-item.is-style-udlhub-purple.is-open .c-accordion__title::after {
+	 content: "-";
+	 color: #5D487C;
+     font-weight: bold;
+	 font-size: 2rem;
+}
+
+
+.wp-block-pb-accordion-item.is-style-udlhub-purple .c-accordion__content {
+	 margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 979px) {
+.wp-block-pb-accordion-item.is-style-udlhub-purple .c-accordion__title {
+	 padding-right: 3rem;
+	 font-size: 1.22rem;
+	 line-height: 170%;
+	
+	}
+}

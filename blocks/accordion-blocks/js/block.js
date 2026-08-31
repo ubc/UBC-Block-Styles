@@ -15,3 +15,9 @@ wp.blocks.registerBlockStyle('pb/accordion-item', {
 	name: 'boxed-secondary',
 	label: 'Boxed Secondary Blue'
 });
+
+// UDL Hub Purple
+wp.blocks.registerBlockStyle('pb/accordion-item', {
+	name: 'udlhub-purple',
+	label: 'UDL Hub Purple'
+});
